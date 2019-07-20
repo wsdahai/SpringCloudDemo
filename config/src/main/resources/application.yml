@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/wsdahai/config.git
+          search-paths: 仓库
+          username: wsdahai
+          password: ws5641465
+#          basedir: /Users/admin/code/myProjects/java/imooc/SpringCloud_Sell/config/basedir
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  endpoints:
+    web:
+      expose: "*"
